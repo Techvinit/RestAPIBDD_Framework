@@ -13,6 +13,7 @@ import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import static io.restassured.RestAssured.given;
 public class StepDefination extends Utils {
@@ -21,10 +22,10 @@ public class StepDefination extends Utils {
     TestData testData = new TestData();
     Response loginResponse;
 
-    @Given("Add login request payload")
-    public void add_login_request_payload() throws FileNotFoundException {
+    @Given("Add login request payload with {string} {string}")
+    public void add_login_request_payload_with(String userEmail, String userPassword) throws IOException {
 
-        loginReqSpec =given().spec(requestSpecification()).body(testData.loginData());
+        loginReqSpec =given().spec(requestSpecification()).body(testData.loginData(userEmail,userPassword));
     }
     @When("User call login API with post http request")
     public void user_call_login_api_with_post_http_request() {

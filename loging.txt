@@ -15,7 +15,7 @@ Body:
     "userPassword": "Vinit@123"
 }
 HTTP/1.1 200 OK
-Date: Wed, 03 Dec 2025 17:23:35 GMT
+Date: Fri, 05 Dec 2025 06:33:37 GMT
 Server: Apache/2.4.52 (Ubuntu)
 Content-Security-Policy: default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
 X-DNS-Prefetch-Control: off
@@ -30,13 +30,13 @@ X-XSS-Protection: 0
 Access-Control-Allow-Origin: *
 Content-Type: application/json; charset=utf-8
 Content-Length: 355
-ETag: W/"163-LfIeToiFzPcEKj1U61GPdw5v/vU"
+ETag: W/"163-eRVWCeCtJq6ZTCVBnGbv6dLKsIs"
 Vary: Accept-Encoding
 Keep-Alive: timeout=5, max=100
 Connection: Keep-Alive
 
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2JiYjZiNjU2OGMzZTlmYjFmMGViMjgiLCJ1c2VyRW1haWwiOiJ2aW5pdDEyQGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjk4MzQxNjYxNDgsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjQ3ODI2MTUsImV4cCI6MTc5NjM0MDIxNX0.uOR8opTo_fGohpbsL9Ewo4Fsh1yhOMYFU0vdIkCbsiM",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2JiYjZiNjU2OGMzZTlmYjFmMGViMjgiLCJ1c2VyRW1haWwiOiJ2aW5pdDEyQGdtYWlsLmNvbSIsInVzZXJNb2JpbGUiOjk4MzQxNjYxNDgsInVzZXJSb2xlIjoiY3VzdG9tZXIiLCJpYXQiOjE3NjQ5MTY0MTcsImV4cCI6MTc5NjQ3NDAxN30.6V8ewZ4M-TxLAkWShyWwC2aUeL-VoZbRvnXd6LkrxwU",
     "userId": "63bbb6b6568c3e9fb1f0eb28",
     "message": "Login Successfully"
 }
