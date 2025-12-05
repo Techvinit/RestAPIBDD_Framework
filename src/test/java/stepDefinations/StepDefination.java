@@ -1,4 +1,5 @@
 package stepDefinations;
+import Resource.APIEndpoints;
 import Resource.TestData;
 import static io.restassured.RestAssured.given;
 
@@ -27,10 +28,12 @@ public class StepDefination extends Utils {
 
         loginReqSpec =given().spec(requestSpecification()).body(testData.loginData(userEmail,userPassword));
     }
-    @When("User call login API with post http request")
-    public void user_call_login_api_with_post_http_request() {
+    @When("User call {string} with post http request")
+    public void user_call_with_post_http_request(String resource) {
         // Write code here that turns the phrase above into concrete actions
-        loginResponse =loginReqSpec.when().post("/api/ecom/auth/login").then().extract().response();
+      APIEndpoints  resourceAPI =APIEndpoints.valueOf(resource);
+        System.out.println(resourceAPI.getResource());
+        loginResponse =loginReqSpec.when().post(resourceAPI.getResource()).then().extract().response();
     }
     @Then("message is {string}")
     public void message_is(String Expectedmsg) {
