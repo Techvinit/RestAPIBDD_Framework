@@ -4,11 +4,11 @@ import pojo.LoginRequestPayload;
 
 public class TestData {
 
-    public LoginRequestPayload loginData(){
+    public LoginRequestPayload loginData(String userEmail, String userPassword){
 
         LoginRequestPayload login= new LoginRequestPayload();
-        login.setUserEmail("vinit12@gmail.com");
-        login.setUserPassword("Vinit@123");
+        login.setUserEmail(userEmail);
+        login.setUserPassword(userPassword);
         return login;
     }
 }
